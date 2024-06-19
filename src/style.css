@@ -4,4 +4,338 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--magnolia);
+}
+/* Fonts */
+.barlow-condensed-thin {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.barlow-condensed-extralight {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.barlow-condensed-light {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.barlow-condensed-regular {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-condensed-medium {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-condensed-semibold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.barlow-condensed-bold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.barlow-condensed-extrabold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.barlow-condensed-black {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.barlow-condensed-thin-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.barlow-condensed-extralight-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.barlow-condensed-light-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.barlow-condensed-regular-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.barlow-condensed-medium-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.barlow-condensed-semibold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.barlow-condensed-bold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.barlow-condensed-extrabold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.barlow-condensed-black-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Montserrat */
+.montserrat-<uniquifier > {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.montserrat-light {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Oswald */
+
+.oswald-<uniquifier > {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+/* Light */
+.oswald-heading-light {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Regular */
+.oswald-heading-regular {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Bold */
+.oswald-heading-bold {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--magnolia);
+  letter-spacing: 0.05em;
+}
+
+/* CSS HEX */
+:root {
+  --picton-blue: #00a7e1ff;
+  --carmine: #931f1dff;
+  --raisin-black: #1d1e2cff;
+  --magnolia: #f8f0fbff;
+  --light-green: #c1ff9bff;
+
+  /* CSS HSL */
+  --picton-blue: hsla(195, 100%, 44%, 1);
+  --carmine: hsla(1, 67%, 35%, 1);
+  --raisin-black: hsla(236, 21%, 14%, 1);
+  --magnolia: hsla(284, 58%, 96%, 1);
+  --light-green: hsla(97, 100%, 80%, 1);
+}
+
+// Define variables
+:root {
+  --picton-blue: #00a7e1ff;
+  --carmine: #931f1dff;
+  --raisin-black: #1d1e2cff;
+  --magnolia: #f8f0fbff;
+  --light-green: #c1ff9bff;
+}
+
+.container {
+  header {
+    padding: 2rem;
+    background-color: var(--picton-blue);
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    gap: min(1.2rem);
+
+    #form {
+      position: fixed;
+      bottom: 15px;
+      display: flex;
+      gap: 15px;
+
+      button {
+        color: var(--magnolia);
+        background-color: var(--picton-blue);
+        border: 0;
+        padding: 1rem 0.75rem;
+        border-radius: 12px;
+      }
+    }
+  }
+}
+
+.list-container {
+  #list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style-type: none;
+    padding-inline: 0.5rem;
+
+    li {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--raisin-black);
+
+      &:hover {
+        background-color: var(--light-green);
+        color: var(--raisin-black);
+      }
+
+      .list-buttons {
+        display: flex;
+        gap: 0.5rem;
+
+        button {
+          font-size: clamp(1.3rem, 1.5vw, 2.3rem);
+          color: white;
+          padding: 0.5rem;
+          border-radius: 6px;
+        }
+      }
+
+      .list-item-delete {
+        background-color: var(--carmine);
+        cursor: pointer;
+      }
+
+      .list-item-edit {
+        background-color: var(--light-green);
+      }
+    }
+  }
+}
+.login-container{
+  display: flex;
+  justify-content: center;
+align-items: center;
+  height: 100vh;
+ 
+}
+.login-form {
+  padding-top:1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 20%;
+  border:1px solid var(--picton-blue);
+  div {
+    display: flex;
+    flex-direction: column;
+    gap:1.3rem;
+    padding:2rem;
+      text-align: center;
+      button{
+        background-color: var(--picton-blue);
+        border: none;
+        padding:.5rem .8rem .5rem .8rem;
+        border-radius: 12px;
+        width:200px;
+        place-self: center;
+
+      }
+    }
+  }
+  input {
+    padding: 0.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-container {
+    #form {
+      width: 100%;
+      place-content: center;
+
+      input {
+        width: 35%;
+      }
+
+      button {
+        width: 10%;
+      }
+    }
+  }
+
+  .list-container {
+    #list {
+      li {
+        justify-content: space-evenly;
+      }
+    }
+  }
 }

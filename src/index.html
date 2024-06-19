@@ -6,20 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDoApp</title>
     <link rel="stylesheet" href="./style.css" />
+    <script defer src="./app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./displayTodos.js"></script>
+    <script type="module" src="./api/fetchUserTodos.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1>ToDoApp</h1>
+    <main class="container">
+      <header>
+        <h1 class="oswald-heading-bold">ToDoApp</h1>
+      </header>
       <div class="form-container">
         <form id="form">
           <input type="text" name="task" id="task" />
-          <button type="submit">Add Task</button>
+          <button class="montserrat-regular" type="submit">Add Task</button>
         </form>
       </div>
       <div class="list-container">
-        <ul id="list"></ul>
+        <ul id="list">
+          <li class="list-item">
+            <span class="list-item-text montserrat-regular">Sample Task 1</span>
+            <div class="list-buttons">
+              <button class="list-item-edit barlow-condensed-medium">
+                Edit
+              </button>
+              <button class="list-item-delete barlow-condensed-medium">
+                Delete
+              </button>
+            </div>
+          </li>
+        </ul>
       </div>
-    </div>
-    <script src="./app.js"></script>
+    </main>
   </body>
 </html>
